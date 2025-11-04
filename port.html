@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menuga Sai Maheswari | AI & Full-Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f4f4f4, #e0eafc);
+      color: #333;
+    }
+
+    nav {
+      background: #1f1f2e;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    nav a i { margin-right: 0.5rem; }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #f8fafc;
+    }
+
+    .name-box {
+      display: inline-block;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .social-links { margin-top: 1rem; }
+    .social-links a {
+      color: #4e54c8;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover { color: #2a4a83; }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2a4a83;
+      margin-bottom: 2rem;
+    }
+
+    .skills, .projects, .education, .internships, .training, .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .skill, .project, .edu-item, .internship-item, .training-item, .cert-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover, .project:hover, .edu-item:hover, .internship-item:hover, .training-item:hover, .cert-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #1f1f2e;
+    }
+
+    .contact {
+      text-align: center;
+      background: #2a4a83;
+      color: white;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contact a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f1f2e;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .skills, .projects, .education, .internships, .training, .certifications {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div><strong>Portfolio</strong></div>
+    <div>
+      <a href="#about"><i class="fas fa-user"></i>About</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+      <a href="#internships"><i class="fas fa-briefcase"></i>Internships</a>
+      <a href="#skills"><i class="fas fa-code"></i>Skills</a>
+      <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+      <a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a>
+      <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="name-box">
+      <h1>Menuga Sai Maheswari</h1>
+    </div>
+    <p>B.Tech in AI & Data Science | Full-Stack Developer | Data Analytics Enthusiast</p>
+    <div class="social-links">
+      <a href="https://github.com/SAIMAHESWARIM" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/menuga-sai-maheswari-197424240/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:smaheswari837@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      I’m an enthusiastic and detail-oriented AI & Data Science graduate skilled in programming, algorithms, and software development. 
+      I have hands-on experience in building scalable applications, automation solutions, and data pipelines using modern technologies. 
+      I’m passionate about solving real-world problems by combining data, intelligence, and engineering.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="education">
+      <div class="edu-item">
+        <h3>B.Tech in AI & Data Science</h3>
+        <p>Vishnu Institute of Technology, Bhimavaram (Nov 2021 – May 2025)<br>CGPA: 8.83</p>
+      </div>
+      <div class="edu-item">
+        <h3>Intermediate (M.P.C)</h3>
+        <p>Sri Sadhana Junior College, Markapur (Jun 2019 – Mar 2021)<br>Percentage: 97.2%</p>
+      </div>
+      <div class="edu-item">
+        <h3>SSC</h3>
+        <p>Bhashyam High School, Markapur (Mar 2019)<br>CGPA: 10.0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships">
+    <h2><i class="fas fa-briefcase"></i> Internships</h2>
+    <div class="internships">
+      <div class="internship-item">
+        <h3>Oasis InfoByte & Bharat Intern</h3>
+        <p>Web Development Intern (Sep 2023 – Dec 2023)<br>
+          Built static and dynamic web applications using HTML, CSS, JavaScript, and Firebase; 
+          focused on responsive UI and full-stack features using Node.js and Express.js.</p>
+      </div>
+      <div class="internship-item">
+        <h3>AWS Academy</h3>
+        <p>Data Analytics Intern (May 2023 – Aug 2023)<br>
+          Designed scalable data pipelines using Amazon Redshift and Snowflake; implemented SQL-based data ingestion and analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2><i class="fas fa-code"></i> Technical Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">C</div>
+      <div class="skill">SQL</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML/CSS</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">Django</div>
+      <div class="skill">Snowflake</div>
+      <div class="skill">Redshift</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">Cassandra</div>
+      <div class="skill">TensorFlow & OpenCV</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">Data Structures & Algorithms</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>3D CNN & Autoencoder Gas Detection</h3>
+        <p>Developed a deep learning framework using TensorFlow and Keras for detecting hazardous gases in hyperspectral images.</p>
+      </div>
+      <div class="project">
+        <h3>Cartoonization Tool</h3>
+        <p>Created a Python + Flask tool to convert images into cartoon-style visuals using OpenCV and K-Means clustering.</p>
+      </div>
+      <div class="project">
+        <h3>Yoga Website</h3>
+        <p>Built a yoga platform with authentication, booking, and personalization features using Node.js, Express.js, and Firebase.</p>
+      </div>
+      <div class="project">
+        <h3>Travel Blog</h3>
+        <p>Developed a dynamic blog platform enabling content sharing, API integration, and comment management.</p>
+      </div>
+      <div class="project">
+        <h3>Medical Store Management System</h3>
+        <p>Built a Python + SQLite system for inventory tracking, expiry checks, and automated billing with GST and discounts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+    <div class="certifications">
+      <div class="cert-item">Google Ads for Beginners – Coursera</div>
+      <div class="cert-item">Android App Development for Beginners</div>
+      <div class="cert-item">HTML, CSS, JavaScript Web Developer – Coursera</div>
+      <div class="cert-item">Data Analytics – AWS Academy</div>
+      <div class="cert-item">Certification in Data Science – Coursera</div>
+      <div class="cert-item">Full Stack Web Development with Node.js – CODINZA</div>
+      <div class="cert-item">Python Basics – HackerRank</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <p>Email: <a href="mailto:smaheswari837@gmail.com">smaheswari837@gmail.com</a></p>
+    <p>Phone: +91 80747 88662</p>
+    <p>Location: Prakasam, Andhra Pradesh, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Menuga Sai Maheswari | All Rights Reserved.
+    <div>
+      <a href="https://github.com/SAIMAHESWARIM" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/menuga-sai-maheswari-197424240/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
